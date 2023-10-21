@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Alexandre Bousquet</title>
+    <link href="Images/icon3.png" rel="icon" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="CSS/style7.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="w100">
+    <div class="bg-image"></div>
+    <div class="alert centerT">
+       
+    </div>
+    <div class="bg-text">
+        <h1 style="font-size:50px">Nagulavancha Nishitha</h1>
+        <p>Visit My e-porifolio</p>
+        <button class="bouton" onclick="window.location.href='HTML/about.html'"><span>Visiter e-Portfolio </span></button>
+    </div>
+</div>
+<script>
+    let close = document.getElementsByClassName("closebtn");
+    let i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+            let div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function () {
+                div.style.display = "none";
+            }, 600);
+        }
+    }
+</script>
+</body>
+
+</html>
